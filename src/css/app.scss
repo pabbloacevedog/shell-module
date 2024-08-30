@@ -1,0 +1,618 @@
+// app global css in SCSS form
+// app global css in SCSS form
+body {
+    font-family: coolvetica;
+    background-color: #000;
+}
+
+// Sección donde agregamos todas las fonts que tendremos disponibles en la app
+// para usarlas solo hay que llamar a la clase de la font en el texto requerido
+
+// importación de la font
+@font-face {
+    font-family: debby;
+    src: url("./font/debby.otf");
+}
+
+@font-face {
+    font-family: big_john;
+    src: url("./font/big_john.otf");
+}
+
+@font-face {
+    font-family: moon_light;
+    src: url("./font/moon_light.otf");
+}
+
+@font-face {
+    font-family: moon_bold;
+    src: url("./font/moon_bold.otf");
+}
+
+@font-face {
+    font-family: slim_joe;
+    src: url("./font/slim_joe.otf");
+}
+
+@font-face {
+    font-family: master_of_break;
+    src: url("./font/master_of_break.otf");
+}
+
+@font-face {
+    font-family: ambarella;
+    src: url("./font/ambarella.otf");
+}
+
+@font-face {
+    font-family: arciform;
+    src: url("./font/arciform.otf");
+}
+
+@font-face {
+    font-family: balqis;
+    src: url("./font/balqis.ttf");
+}
+
+@font-face {
+    font-family: priscilla;
+    src: url("./font/priscilla.otf");
+}
+
+@font-face {
+    font-family: sofia;
+    src: url("./font/sofia.otf");
+}
+
+@font-face {
+    font-family: santana;
+    src: url("./font/santana.ttf");
+}
+
+@font-face {
+    font-family: ikaros;
+    src: url("./font/ikaros.otf");
+}
+
+@font-face {
+    font-family: hilton;
+    src: url("./font/hilton.otf");
+}
+
+@font-face {
+    font-family: hilton_b;
+    src: url("./font/hilton_b.otf");
+}
+
+@font-face {
+    font-family: hilton_l;
+    src: url("./font/hilton_l.otf");
+}
+
+@font-face {
+    font-family: wild;
+    src: url("./font/wild.ttf");
+}
+
+@font-face {
+    font-family: somatic;
+    src: url("./font/somatic.otf");
+}
+
+@font-face {
+    font-family: antro;
+    src: url("./font/antro.otf");
+}
+
+@font-face {
+    font-family: casual;
+    src: url("./font/casual.ttf");
+}
+
+@font-face {
+    font-family: stream;
+    src: url("./font/stream.ttf");
+}
+
+@font-face {
+    font-family: foundry;
+    src: url("./font/foundry.otf");
+}
+
+@font-face {
+    font-family: desire;
+    src: url("./font/desire.otf");
+}
+
+@font-face {
+    font-family: conquer;
+    src: url("./font/conquer.otf");
+}
+
+@font-face {
+    font-family: andis;
+    src: url("./font/andis.otf");
+}
+
+@font-face {
+    font-family: roboto;
+    src: url("./font/roboto.ttf");
+}
+
+@font-face {
+    font-family: roboto_b;
+    src: url("./font/roboto_b.ttf");
+}
+
+@font-face {
+    font-family: roboto_l;
+    src: url("./font/roboto_l.ttf");
+}
+
+@font-face {
+    font-family: roboto_t;
+    src: url("./font/roboto_t.ttf");
+}
+
+@font-face {
+    font-family: panterick;
+    src: url("./font/panterick.ttf");
+}
+
+@font-face {
+    font-family: malvie;
+    src: url("./font/malvie.otf");
+}
+
+@font-face {
+    font-family: brush;
+    src: url("./font/brush.otf");
+}
+
+@font-face {
+    font-family: big;
+    src: url("./font/big.otf");
+}
+
+@font-face {
+    font-family: lato;
+    src: url("./font/lato.ttf");
+}
+
+@font-face {
+    font-family: lato_t;
+    src: url("./font/lato_t.ttf");
+}
+
+@font-face {
+    font-family: lato_b;
+    src: url("./font/lato_b.ttf");
+}
+
+@font-face {
+    font-family: photowall;
+    src: url("./font/photowall.otf");
+}
+
+@font-face {
+    font-family: allenatore;
+    src: url("./font/allenatore.otf");
+}
+
+@font-face {
+    font-family: barlet;
+    src: url("./font/barlet.otf");
+}
+
+@font-face {
+    font-family: beway;
+    src: url("./font/beway.otf");
+}
+
+@font-face {
+    font-family: beway_l;
+    src: url("./font/beway_l.otf");
+}
+
+@font-face {
+    font-family: neofobia_r;
+    src: url("./font/neofobia_r.ttf");
+}
+
+@font-face {
+    font-family: rigoletto;
+    src: url("./font/rigoletto.otf");
+}
+
+@font-face {
+    font-family: sajidah;
+    src: url("./font/sajidah.ttf");
+}
+
+@font-face {
+    font-family: eremite;
+    src: url("./font/eremite.otf");
+}
+
+@font-face {
+    font-family: paciencia;
+    src: url("./font/paciencia.otf");
+}
+
+@font-face {
+    font-family: buntype;
+    src: url("./font/buntype.otf");
+}
+
+@font-face {
+    font-family: syabil;
+    src: url("./font/syabil.otf");
+}
+
+@font-face {
+    font-family: nowayround_r;
+    src: url("./font/nowayround_r.ttf");
+}
+
+@font-face {
+    font-family: nowayround_i;
+    src: url("./font/nowayround_i.ttf");
+}
+
+@font-face {
+    font-family: comfortaa_b;
+    src: url("./font/Comfortaa-Bold.ttf");
+}
+
+@font-face {
+    font-family: comfortaa_l;
+    src: url("./font/Comfortaa-Light.ttf");
+}
+
+@font-face {
+    font-family: quicksand_b;
+    src: url("./font/Quicksand_Bold.otf");
+}
+
+@font-face {
+    font-family: quicksand_book;
+    src: url("./font/Quicksand_Book.otf");
+}
+
+@font-face {
+    font-family: quicksand_dash;
+    src: url("./font/Quicksand_Dash.otf");
+}
+
+@font-face {
+    font-family: quicksand_light;
+    src: url("./font/Quicksand_Light.otf");
+}
+
+@font-face {
+    font-family: quicksand_book_oblique;
+    src: url("./font/Quicksand_Book_Oblique.otf");
+}
+
+@font-face {
+    font-family: monserrat_regular;
+    src: url("./font/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: monserrat_thin;
+    src: url("./font/Montserrat-Thin.ttf");
+}
+
+@font-face {
+    font-family: monserrat_bold;
+    src: url("./font/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: monserrat_medium;
+    src: url("./font/Montserrat-Medium.ttf");
+}
+@font-face {
+    font-family: coolvetica;
+    src: url("./font/coolvetica rg.otf");
+}
+// declaración de la clase css para usar la font
+.f_debby {
+    font-family: "debby";
+}
+
+.f_big_john {
+    font-family: "big_john";
+}
+
+.f_moon_light {
+    font-family: "moon_light";
+}
+
+.f_moon_bold {
+    font-family: "moon_bold";
+}
+
+.f_slim_joe {
+    font-family: "slim_joe";
+}
+
+.f_master_of_break {
+    font-family: "master_of_break";
+}
+
+.f_ambarella {
+    font-family: "ambarella";
+}
+
+.f_arciform {
+    font-family: "arciform";
+}
+
+.f_balqis {
+    font-family: "balqis";
+}
+
+.f_priscilla {
+    font-family: "priscilla";
+}
+
+.f_sofia {
+    font-family: "sofia";
+}
+
+.f_santana {
+    font-family: "santana";
+}
+
+.f_ikaros {
+    font-family: "ikaros";
+}
+
+.f_hilton {
+    font-family: "hilton";
+}
+
+.f_hilton_b {
+    font-family: "hilton_b";
+}
+
+.f_hilton_l {
+    font-family: "hilton_l";
+}
+
+.f_wild {
+    font-family: "wild";
+}
+
+.f_somatic {
+    font-family: "somatic";
+}
+
+.f_antro {
+    font-family: "antro";
+}
+
+.f_casual {
+    font-family: "casual";
+}
+
+.f_stream {
+    font-family: "stream";
+}
+
+.f_foundry {
+    font-family: "foundry";
+}
+
+.f_desire {
+    font-family: "desire";
+}
+
+.f_conquer {
+    font-family: "conquer";
+}
+
+.f_andis {
+    font-family: "andis";
+}
+
+.f_roboto {
+    font-family: "roboto";
+}
+
+.f_roboto_b {
+    font-family: "roboto_b";
+}
+
+.f_roboto_l {
+    font-family: "roboto_l";
+}
+
+.f_roboto_t {
+    font-family: "roboto_t";
+}
+
+.f_panterick {
+    font-family: "panterick";
+}
+
+.f_malvie {
+    font-family: "malvie";
+}
+
+.f_brush {
+    font-family: "brush";
+}
+
+.f_big {
+    font-family: "big";
+}
+
+.f_lato {
+    font-family: "lato";
+}
+
+.f_lato_t {
+    font-family: "lato_t";
+}
+
+.f_lato_b {
+    font-family: "lato_b";
+}
+
+.f_photowall {
+    font-family: "photowall";
+}
+
+.f_allenatore {
+    font-family: "allenatore";
+}
+
+.f_barlet {
+    font-family: "barlet";
+}
+
+.f_beway {
+    font-family: "beway";
+}
+
+.f_beway_l {
+    font-family: "beway_l";
+}
+
+.f_neofobia_r {
+    font-family: "neofobia_r";
+}
+
+.f_rigoletto {
+    font-family: "rigoletto";
+}
+
+.f_sajidah {
+    font-family: "sajidah";
+}
+
+.f_eremite {
+    font-family: "eremite";
+}
+
+.f_paciencia {
+    font-family: "paciencia";
+}
+
+.f_buntype {
+    font-family: "buntype";
+}
+
+.f_syabil {
+    font-family: "syabil";
+}
+
+.f_nowayround_r {
+    font-family: "nowayround_r";
+}
+
+.f_nowayround_i {
+    font-family: "nowayround_i";
+}
+
+.f_comfortaa {
+    font-family: "comfortaa";
+}
+
+.f_comfortaa_l {
+    font-family: "comfortaa_l";
+}
+
+.f_comfortaa_b {
+    font-family: "comfortaa_b";
+}
+
+.f_quicksand {
+    font-family: "quicksand";
+}
+
+.f_quicksand_b {
+    font-family: "quicksand_b";
+}
+
+.f_quicksand_book {
+    font-family: "quicksand_book";
+}
+
+.f_quicksand_dash {
+    font-family: "quicksand_dash";
+}
+
+.f_quicksand_light {
+    font-family: "quicksand_light";
+}
+
+.f_monserrat_l {
+    font-family: "monserrat_thin";
+}
+
+.f_monserrat_b {
+    font-family: "monserrat_bold";
+}
+
+.f_monserrat_r {
+    font-family: "monserrat_regular";
+}
+.f_coolvetica {
+    font-family: "coolvetica";
+}
+.my-background {
+    background-image: url("path/to/optimized-image.jpg");
+    background-size: cover; /* o contain, dependiendo de tus necesidades */
+    background-position: center;
+}
+@media (min-width: 1201px) {
+    .description-section {
+        font-size: 2.2rem;
+        text-align: center;
+        padding: 0 15%;
+        color: #fff;
+    }
+    .title-section {
+        font-size: 3.5rem;
+        text-align: center;
+        line-height: 2.75rem;
+        text-align: center;
+    }
+}
+@media (max-width: 1200px) {
+    .description-section {
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 0 15%;
+        color: #fff;
+    }
+    .title-section {
+        font-size: 2.5rem;
+        text-align: center;
+        line-height: 2.75rem;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .description-section {
+        font-size: 1.2rem;
+        text-align: center;
+        color: #fff;
+        padding: 0 8%;
+    }
+    .title-section {
+        font-size: 2rem;
+        text-align: center;
+        line-height: 2.75rem;
+        text-align: center;
+    }
+}
+.q-field__label {
+    padding-left: 10px;
+}

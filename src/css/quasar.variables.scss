@@ -1,0 +1,235 @@
+// Quasar SCSS (& Sass) Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass/SCSS variables found in Quasar's source Sass/SCSS files.
+
+// Check documentation for full list of Quasar variables
+
+// Your own variables (that are declared here) and Quasar's own
+// ones will be available out of the box in your .vue/.scss/.sass files
+
+// It's highly recommended to change the default colors
+// to match your app's branding.
+// Tip: Use the "Theme Builder" on Quasar's documentation website.
+
+
+// src/css/quasar.variables.scss
+
+// $primary   : #1806d6;
+// $secondary : #7926a6;
+// $accent    : #9C27B0;
+
+// $dark      : #1d1d1d;
+// $dark-page : #121212;
+
+// $positive  : #2dba4e;
+// $negative  : #e0021c;
+// $info      : #005eff;
+// $warning   : #F2C037;
+
+$primary: #1baade;
+$secondary: #1aacac;
+$accent: #45a201;
+
+$dark: #000000;
+$dark-page: #121212;
+
+$positive: #22ba75;
+$negative: #c10015;
+$info: #31ccec;
+$warning: #f2c037;
+
+.q-drawer {
+    background: rgba(255, 255, 255, .3);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1.5px solid rgba(209, 213, 219, 0.3);
+    color: white;
+}
+.texto-primary {
+    background: linear-gradient(to right, $primary 0%, $accent 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text-admin {
+    color: #929397;
+}
+.texto-primari {
+    background-color: linear-gradient(to right, $primary 0%, $accent 100%);
+}
+.bg-primary {
+    background: linear-gradient(to right, $primary 0%, $accent 100%) !important;
+}
+.icons .q-tab__content .q-tab__icon {
+    width: 30px;
+    height: 30px;
+    font-size: 2.5rem !important;
+}
+.bg-basico {
+    background-image: linear-gradient(
+        148deg,
+        #00dcb4 27.8%,
+        #00accf 67%
+    ) !important;
+}
+.text-basico {
+    background-image: linear-gradient(
+        148deg,
+        #00dcb4 27.8%,
+        #00accf 67%
+    ) !important;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+// .bg-profesional {
+//     background: linear-gradient(to right, $primary 0%, $accent 100%) !important;
+// }
+// .text-profesional {
+//     background-image: linear-gradient(
+//         to right,
+//         $primary 0%,
+//         $accent 100%
+//     ) !important;
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+// }
+// .bg-premium {
+//     background: linear-gradient(
+//         -225deg,
+//         #ac32e4 0%,
+//         #7918f2 48%,
+//         #4801ff 100%
+//     ) !important;
+// }
+// .text-premium {
+//     background-image: linear-gradient(
+//         -225deg,
+//         #ac32e4 0%,
+//         #7918f2 48%,
+//         #4801ff 100%
+//     ) !important;
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+// }
+// .bg-platinum {
+//     background-color: #21d4fd;
+//     background-image: linear-gradient(
+//         124deg,
+//         #21d4fd 0%,
+//         #b721ff 100%
+//     ) !important;
+// }
+// .text-platinum {
+//     background-color: #21d4fd;
+//     background-image: linear-gradient(
+//         124deg,
+//         #21d4fd 0%,
+//         #b721ff 100%
+//     ) !important;
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+// }
+.menu-item {
+    transition: background-color 0.3s, background-image 0.3s;
+}
+
+.menu-item--active {
+    background-color: transparent; /* necesario para que el gradiente sea visible */
+}
+.links {
+    font-size: 1.1rem !important;
+}
+.chip-plan .q-chip__icon {
+    color: #000 !important;
+}
+.q-notification {
+    border-radius: 25px !important;
+    -webkit-border-radius: 25px !important;
+    -moz-border-radius: 25px !important;
+    -ms-border-radius: 25px !important;
+    -o-border-radius: 25px !important;
+}
+
+.q-card {
+    border-radius: 20px !important;
+    -webkit-border-radius: 20px !important;
+    -moz-border-radius: 20px !important;
+    -ms-border-radius: 20px !important;
+    -o-border-radius: 20px !important;
+}
+.tab-img .q-tab__content {
+    min-width: 200px !important;
+}
+.tab-panel-img .q-panel .q-tab-panel {
+    padding: 1% !important;
+}
+
+.q-field--filled .q-field__control {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.body--dark {
+    background-color: #000;
+    color: #929397;
+    .menu-activo {
+        border-radius: 10px;
+        margin: 0px 4px;
+        background-color: #fff;
+    }
+    .q-layout__section--marginal {
+        background-color: #000;
+        color: #fff;
+    }
+
+    .avatar-customer {
+        background-color: $dark-page;
+        /* Color para el tema oscuro */
+    }
+}
+
+/* Estilos para el tema claro */
+.body--light {
+    background-color: #f2f2f2;
+    color: black;
+    .menu-activo {
+        border-radius: 10px;
+        margin: 0px 4px;
+        background-color: #000;
+    }
+    .q-layout__section--marginal {
+        background-color: #fff;
+        color: #000;
+    }
+    .avatar-customer {
+        background-color: #f2f2f2;
+        /* Color para el tema claro */
+    }
+}
+.q-field {
+    border-radius: 10px !important;
+    -webkit-border-radius: 10px !important;
+    -moz-border-radius: 10px !important;
+    -ms-border-radius: 10px !important;
+    -o-border-radius: 10px !important;
+}
+.q-field--filled .q-field__control:before {
+    border-bottom: 0px solid rgba(255, 0, 0, 0.24);
+    transition: border-color 0.36s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.q-field--filled .q-field__control:hover:before {
+    border-color: $dark;
+}
+.q-field--filled .q-field__control:after {
+    height: 0px;
+    top: auto;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    transform-origin: center bottom;
+    transform: scale3d(0, 1, 1);
+    background: currentColor;
+    transition: transform 0.36s cubic-bezier(0.4, 0, 0.2, 1);
+}
