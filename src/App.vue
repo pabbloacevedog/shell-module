@@ -4,16 +4,15 @@
 
 <script setup>
 import { onMounted } from 'vue';
-// import { useAuthStore } from './stores/auth';
+// import { useShellStore } from './stores/shell';
 
 // // Restaurar el estado de autenticación
 // onMounted(() => {
-//     const authStore = useAuthStore();
-//     authStore.restoreUser();
+//     const shellStore = useShellStore();
+//     shellStore.restoreUser();
 // });
 </script>
 
 <style>
 /* estilos aquí */
 </style>
-  

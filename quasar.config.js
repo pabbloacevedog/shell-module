@@ -18,13 +18,11 @@ const federation = require('@originjs/vite-plugin-federation');
 const viteConfig = defineConfig({
     plugins: [
         federation({
-            name: 'authApp',
-            filename: 'remoteEntry.js',
-            exposes: {
-                './Login': './src/components/Login.vue',
-                './Register': './src/components/Register.vue',
+            name: 'shellApp',
+            remotes: {
+                authApp: 'http://localhost:9001/dist/spa/assets/remoteEntry.js',
             },
-            shared: ['vue', 'pinia'],
+            shared: ['vue'],
         }),
     ],
 });
@@ -47,7 +45,6 @@ module.exports = configure(function (/* ctx */) {
         // https://v2.quasar.dev/quasar-cli/boot-files
         boot: [
             'i18n',
-            'axios',
             // 'graphql',
         ],
 
@@ -73,7 +70,7 @@ module.exports = configure(function (/* ctx */) {
         // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#build
         build: {
             target: {
-                browser: ['es2019', 'edge88', 'firefox78', 'chrome87', 'safari13.1'],
+                browser: ['es2022', 'chrome100', 'edge100', 'firefox100', 'safari15'],
                 node: 'node16'
             },
 
@@ -97,6 +94,13 @@ module.exports = configure(function (/* ctx */) {
             // viteVuePluginOptions: {},
 
             vitePlugins: [
+                ['@originjs/vite-plugin-federation', {
+                    name: 'shellApp',
+                    filename: 'remoteEntry.js',
+                    remotes: {
+                        authApp: 'http://localhost:9001/dist/spa/assets/remoteEntry.js'
+                    }
+                }],
                 ['@intlify/vite-plugin-vue-i18n', {
                     // if you want to use Vue I18n Legacy API, you need to set `compositionOnly: false`
                     // compositionOnly: false,
@@ -127,7 +131,8 @@ module.exports = configure(function (/* ctx */) {
         // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#devServer
         devServer: {
             // https: true
-            open: true // opens browser window automatically
+			open: true, // opens browser window automatically
+			hot: true,
         },
 
         // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#framework
@@ -234,7 +239,7 @@ module.exports = configure(function (/* ctx */) {
             builder: {
                 // https://www.electron.build/configuration/configuration
 
-                appId: 'auth-app'
+                appId: 'shell-app'
             }
         },
 

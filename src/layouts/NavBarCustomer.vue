@@ -99,14 +99,14 @@ const menuList = [
     }
 ]
 import { useRouter, useRoute } from 'vue-router';
-import { useAuthStore } from 'src/stores/auth';
+// import { useAuthStore } from 'src/stores/auth';
 import { Dark } from 'quasar'
 
 export default {
     setup() {
         const router = useRouter();
         const route = useRoute();
-        const authStore = useAuthStore();
+        // const authStore = useAuthStore();
 
         async function handleLogout() {
             await authStore.logout();
